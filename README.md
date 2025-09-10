@@ -10,6 +10,8 @@ The ultimate goal is to apply this pipeline for **localising stiff regions in ti
 ```
 tactile-gnn-hardness/
 ├── model/ # GNN architectures and training scripts
+│ ├── graph_outputs
+│ │ └── graphs # .pt sample graphs to train and validate the model
 │ ├── GINEConv.py # GINE model with edge attributes
 │ ├── run_model.py # Train/validate/test GNN models
 │ └── vis.py # Visualisation and plotting tools
@@ -24,6 +26,13 @@ tactile-gnn-hardness/
 │ ├── build_graph_dataset.py # Convert tracked markers into graph data (.pt)
 │ ├── build_graph_dataset_knn.py # Convert tracked markers into graph data using kNN (.pt)
 │ └── build_graph_dataset_qc.py # Convert tracked markers into graph data eliminating distant edges (.pt)
+│
+├── sample_data/ # Sample dataset with 5 cube videos for marker tracking
+│ ├── stiffness-cube-1.mvk
+│ ├── stiffness-cube-2.mvk
+│ ├── stiffness-cube-3.mvk
+│ ├── stiffness-cube-4.mvk
+│ └── stiffness-cube-5.mvk
 
 ```
 ## 📊 Results
