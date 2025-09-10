@@ -7,7 +7,8 @@ The ultimate goal is to apply this pipeline for **localising stiff regions in ti
 ---
 
 ## 📂 Repository Structure
-```tactile-gnn-hardness/
+```
+tactile-gnn-hardness/
 ├── model/ # GNN architectures and training scripts
 │ ├── GINEConv.py # GINE model with edge attributes
 │ ├── run_model.py # Train/validate/test GNN models
@@ -22,6 +23,7 @@ The ultimate goal is to apply this pipeline for **localising stiff regions in ti
 ├── build_graphs/ # Dataset construction
 │ ├── build_graph_dataset.py # Convert tracked markers into graph data (.pt)
 │ ├── build_graph_dataset_knn.py # Convert tracked markers into graph data using kNN (.pt)
-│ └── build_graph_dataset_qc.py # Convert tracked markers into graph data eliminating distant edges (.pt)```
+│ └── build_graph_dataset_qc.py # Convert tracked markers into graph data eliminating distant edges (.pt)
 
+```
 
