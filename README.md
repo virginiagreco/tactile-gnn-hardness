@@ -26,4 +26,10 @@ tactile-gnn-hardness/
 │ └── build_graph_dataset_qc.py # Convert tracked markers into graph data eliminating distant edges (.pt)
 
 ```
+## 📊 Results
 
+1) GINEConv achieved R² = 0.69, outperforming both GCN and CNN+LSTM baselines.
+
+2) The model effectively captures the relationship between deformation fields and material hardness.
+
+3) This approach provides a proof of concept for applying GNNs to infer physical properties which can be useful for tumour detection.
